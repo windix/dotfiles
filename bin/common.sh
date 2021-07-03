@@ -4,6 +4,7 @@ function sync {
 
   mkdir -p ${DOTFILES_ROOT}/zsh
   cp ~/.zshrc ${DOTFILES_ROOT}/zsh/zshrc
+  cp ~/.zprofile ${DOTFILES_ROOT}/zsh/zprofile
   cp ~/.p10k.zsh ${DOTFILES_ROOT}/zsh/p10k.zsh
 
   mkdir -p ${DOTFILES_ROOT}/vim
@@ -19,6 +20,7 @@ function install {
   DOTFILES_ROOT=$(pwd -P)
 
   cp ${DOTFILES_ROOT}/zsh/zshrc ~/.zshrc
+  cp ${DOTFILES_ROOT}/zsh/zprofile ~/.zprofile
   cp ${DOTFILES_ROOT}/zsh/p10k.zsh ~/.p10k.zsh
 
   cp ${DOTFILES_ROOT}/vim/vimrc ~/.vimrc

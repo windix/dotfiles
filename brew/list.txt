@@ -5,6 +5,7 @@ aria2
 git
 tig
 nvm
+pyenv
 awscli
 wget
 curl
