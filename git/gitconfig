@@ -1,0 +1,36 @@
+[user]
+name = Wei Feng
+email = wei.feng@kmart.com.au
+signingkey = CBFC4B58EE1A8691
+
+[init]
+defaultBranch = master
+
+[merge]
+tool = kdiff3
+
+[mergetool "kdiff3"]
+path = /usr/local/bin/kdiff3
+trustExitCode = false
+
+[diff]
+guitool = kdiff3
+
+[difftool "kdiff3"]
+path = /usr/local/bin/kdiff3
+trustExitCode = false
+
+[core]
+excludesfile = /Users/wfeng3/.gitignore
+
+[filter "lfs"]
+process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+
+[commit]
+gpgsign = true
+
+[pull]
+ff = only

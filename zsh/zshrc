@@ -1,0 +1,50 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# antigen
+source /usr/local/share/antigen/antigen.zsh
+
+antigen use oh-my-zsh
+
+antigen bundle git
+# antigen bundle aws
+antigen bundle yarn
+# antigen bundle dotenv
+# antigen bundle virtualenv
+antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle mollifier/cd-bookmark
+
+#antigen theme robbyrussell
+#antigen theme bhilburn/powerlevel9k
+antigen theme romkatv/powerlevel10k
+
+antigen apply
+
+## ZSH
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Reloads the history whenever you use it
+setopt share_history
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# byobu
+export BYOBU_PREFIX=/usr/local
+
+# AWS
+export AWS_PROFILE='default'
+export AWS_REGION='ap-southeast-2'
+
+# QUIVER
+export QUIVER_WORKLOG_BASEDIR=~/quiver/Work.qvlibrary/92A0B31E-3D46-4D87-B2D9-1567E0622B8D.qvnotebook
+
