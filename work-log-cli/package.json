@@ -1,0 +1,17 @@
+{
+  "name": "work-log-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "work-log": "./bin/index.js"
+  },
+  "author": "Wei Feng",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.10.5"
+  }
+}
