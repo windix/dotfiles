@@ -41,6 +41,9 @@ export NVM_DIR="$HOME/.nvm"
 # pyenv
 eval "$(pyenv init -)"
 
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin"
+
 # byobu
 export BYOBU_PREFIX=/usr/local
 
@@ -50,4 +53,3 @@ export AWS_REGION='ap-southeast-2'
 
 # QUIVER
 export QUIVER_WORKLOG_BASEDIR=~/quiver/Work.qvlibrary/92A0B31E-3D46-4D87-B2D9-1567E0622B8D.qvnotebook
-
