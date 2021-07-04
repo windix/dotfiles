@@ -42,3 +42,4 @@ iina
 yacreader
 microsoft-remote-desktop
 homebrew/cask-fonts/font-jetbrains-mono
+vnc-viewer
